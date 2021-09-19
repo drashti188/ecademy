@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html class="dark-mode" lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Luma</title>
+    <title>Ecademy</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -29,10 +29,11 @@
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/dark.css" rel="stylesheet">
 
 </head>
 
-<body class="layout-boxed ">
+<body class="layout-sticky-subnav layout-default ">
 
     <div class="preloader">
         <div class="sk-double-bounce">
@@ -41,102 +42,77 @@
         </div>
     </div>
 
-    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
-        <div class="mdk-drawer-layout__content page-content">
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
 
-            <!-- Header -->
-            <div class="navbar navbar-expand navbar-dark navbar-dark-dodger-blue navbar-shadow" id="default-navbar" data-primary>
+        <!-- Header -->
+        <div id="header" class="mdk-header mdk-header--bg-dark bg-dark js-mdk-header mb-0" data-effects="parallax-background waterfall" data-fixed data-condenses>
+            <div class="mdk-header__bg">
+                <div class="mdk-header__bg-front" style="background-image: url(assets/images/photodune-4161018-group-of-students-m.jpg);"></div>
+            </div>
+            <div class="mdk-header__content justify-content-center">
+                <div class="navbar navbar-expand navbar-dark-dodger-blue bg-transparent will-fade-background" id="default-navbar" data-primary>
 
-                <!-- Navbar Brand -->
-                <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link">
+                    <!-- Navbar Brand -->
+                    <a href="index.html" class="navbar-brand mr-16pt">
+                        <!-- <img class="navbar-brand-icon" src="assets/images/logo/white-100@2x.png" width="30" alt="Luma"> -->
+
                         <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
                             <span class="avatar-title rounded bg-primary"><img src="assets/images/illustration/student/128/white.svg" alt="logo" class="img-fluid" /></span>
                         </span>
-                        <span class="d-none d-lg-block">Ecademy</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">Courses</a>
-                        <div class="dropdown-menu">
-                            <a href="courses.html" class="dropdown-item">Browse Courses</a>
-                            <a href="boxed-student-course.html" class="dropdown-item">Preview Course</a>
-                            <a href="boxed-student-lesson.html" class="dropdown-item">Preview Lesson</a>
-                            <a href="boxed-student-take-course.html" class="dropdown-item"><span class="mr-16pt">Take Course</span> <span class="badge badge-notifications badge-accent text-uppercase ml-auto">Pro</span></a>
-                            <a href="boxed-student-take-lesson.html" class="dropdown-item">Take Lesson</a>
-                            <a href="boxed-student-take-quiz.html" class="dropdown-item">Take Quiz</a>
-                            <a href="boxed-student-quiz-result-details.html" class="dropdown-item">Quiz Result</a>
-                            <a href="boxed-student-dashboard.html" class="dropdown-item">Student Dashboard</a>
-                            <a href="boxed-student-my-courses.html" class="dropdown-item">My Courses</a>
-                            <a href="boxed-student-quiz-results.html" class="dropdown-item">My Quizzes</a>
-                            <a href="boxed-help-center.html" class="dropdown-item">Help Center</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">Paths</a>
-                        <div class="dropdown-menu">
-                            <a href="boxed-paths.html" class="dropdown-item">Browse Paths</a>
-                            <a href="boxed-student-path.html" class="dropdown-item">Path Details</a>
-                            <a href="boxed-student-path-assessment.html" class="dropdown-item">Skill Assessment</a>
-                            <a href="boxed-student-path-assessment-result.html" class="dropdown-item">Skill Result</a>
-                            <a href="boxed-student-paths.html" class="dropdown-item">My Paths</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="boxed-pricing.html" class="nav-link">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown" data-toggle="tooltip" data-title="Community" data-placement="bottom" data-boundary="window">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
-                            <i class="material-icons">people_outline</i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="boxed-teachers.html" class="dropdown-item">Browse Teachers</a>
-                            <a href="boxed-student-profile.html" class="dropdown-item">Student Profile</a>
-                            <a href="boxed-teacher-profile.html" class="dropdown-item">Instructor Profile</a>
-                            <a href="boxed-blog.html" class="dropdown-item">Blog</a>
-                            <a href="boxed-blog-post.html" class="dropdown-item">Blog Post</a>
-                            <a href="boxed-faq.html" class="dropdown-item">FAQ</a>
-                            <a href="boxed-help-center.html" class="dropdown-item">Help Center</a>
-                            <a href="boxed-discussions.html" class="dropdown-item">Discussions</a>
-                            <a href="boxed-discussion.html" class="dropdown-item">Discussion Details</a>
-                            <a href="boxed-discussions-ask.html" class="dropdown-item">Ask Question</a>
-                        </div>
-                    </li>
-                </ul>
-
-                <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="boxed-index.html" style="max-width: 230px">
-                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
-                    <input type="text" class="form-control" placeholder="Search ...">
-                </form>
-
-                <ul class="nav navbar-nav ml-auto mr-0">
-                    <li class="nav-item">
-                        <a href="boxed-login.html" class="nav-link" data-toggle="tooltip" data-title="Login" data-placement="bottom" data-boundary="window"><i class="material-icons">lock_open</i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="boxed-signup.html" class="btn btn-outline-white">Get Started</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- // END Header -->
-
-            <div class="mdk-box mdk-box--bg-primary bg-dark js-mdk-box mb-0" data-effects="parallax-background blend-background">
-                <div class="mdk-box__bg">
-                    <div class="mdk-box__bg-front" style="background-image: url(assets/images/photodune-4161018-group-of-students-m.jpg);"></div>
+                        <span class="d-none d-lg-block">Ecademy</span>
+                    </a>
+                    <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="paths.html" class="nav-link">Paths</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown" data-toggle="tooltip" data-title="Community" data-placement="bottom" data-boundary="window">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                                <i class="material-icons">people_outline</i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="teachers.html" class="dropdown-item">Browse Teachers</a>
+                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                <a href="faq.html" class="dropdown-item">FAQ</a>
+                                <a href="help-center.html" class="dropdown-item">Help Center</a>
+                                <a href="discussions.html" class="dropdown-item">Discussions</a>
+                                <a href="discussions-ask.html" class="dropdown-item">Ask Question</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="boxed-index.html" style="max-width: 230px">
+                        <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                        <input type="text" class="form-control" placeholder="Search ...">
+                    </form>
+                    <ul class="nav navbar-nav ml-auto mr-0">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link" data-toggle="tooltip" data-title="Login" data-placement="bottom" data-boundary="window"><i class="material-icons">lock_open</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="signup.html" class="btn btn-outline-white">Get Started</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="mdk-box__content justify-content-center">
-                    <div class="hero container-fluid page__container text-center py-112pt">
-                        <h1 class="text-white text-shadow">Learn to Code</h1>
-                        <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-48pt">Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
-                        <a href="boxed-courses.html" class="btn btn-lg btn-white btn--raised mb-16pt">Browse Courses</a>
-                        <p class="mb-0"><a href="" class="text-white text-shadow"><strong>Are you a teacher?</strong></a></p>
-                    </div>
+                <div class="hero container page__container text-center text-md-left py-112pt">
+                    <h1 class="text-white text-shadow">Learn to Code</h1>
+                    <p class="lead measure-hero-lead mx-auto mx-md-0 text-white text-shadow mb-48pt">Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
+                    <a href="courses.html" class="btn btn-lg btn-white btn--raised mb-16pt">Browse Courses</a>
+                    <p class="mb-0"><a href="" class="text-white text-shadow"><strong>Are you a teacher?</strong></a></p>
                 </div>
             </div>
+        </div>
+        <!-- // END Header -->
 
+        <!-- Header Layout Content -->
+        <div class="mdk-header-layout__content page-content ">
             <div class="bg-white border-bottom-2 py-16pt ">
-                <div class="container-fluid page__container">
+                <div class="container page__container">
                     <div class="row align-items-center">
                         <div class="d-flex col-md align-items-center border-bottom border-md-0 mb-16pt mb-md-0 pb-16pt pb-md-0">
                             <div class="rounded-circle bg-primary w-64 h-64 d-inline-flex align-items-center justify-content-center mr-16pt">
@@ -168,10 +144,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="page-section border-bottom-2">
-                <div class="container-fluid page__container">
-
+                <div class="container page__container">
                     <div class="page-separator">
                         <div class="page-separator__text">From the blog</div>
                     </div>
@@ -191,12 +165,11 @@
                                     </div>
                                     <div class="posts-card-popular__title card-body">
                                         <small class="text-muted text-uppercase">sketch</small>
-                                        <a class="card-title" href="boxed-blog-post.html">Merge Duplicates Inconsistent Symbols</a>
+                                        <a class="card-title" href="blog-post.html">Merge Duplicates Inconsistent Symbols</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6 col-lg-4 card-group-row__col">
                             <div class="card card--elevated posts-card-popular overlay card-group-row__card">
                                 <img src="assets/images/paths/invision_430x168.png" alt="" class="card-img">
@@ -212,12 +185,11 @@
                                     </div>
                                     <div class="posts-card-popular__title card-body">
                                         <small class="text-muted text-uppercase">invision</small>
-                                        <a class="card-title" href="boxed-blog-post.html">Design Systems Essentials</a>
+                                        <a class="card-title" href="blog-post.html">Design Systems Essentials</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6 col-lg-4 card-group-row__col">
                             <div class="card card--elevated posts-card-popular overlay card-group-row__card">
                                 <img src="assets/images/paths/photoshop_430x168.png" alt="" class="card-img">
@@ -233,21 +205,20 @@
                                     </div>
                                     <div class="posts-card-popular__title card-body">
                                         <small class="text-muted text-uppercase">photoshop</small>
-                                        <a class="card-title" href="boxed-blog-post.html">Semantic Logo Design</a>
+                                        <a class="card-title" href="blog-post.html">Semantic Logo Design</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="posts-cards">
                         <div class="card posts-card mb-0">
                             <div class="posts-card__content d-flex align-items-center flex-wrap">
                                 <div class="avatar avatar-lg mr-3">
-                                    <a href="boxed-blog-post.html"><img src="assets/images/paths/invision_200x168.png" alt="avatar" class="avatar-img rounded"></a>
+                                    <a href="blog-post.html"><img src="assets/images/paths/invision_200x168.png" alt="avatar" class="avatar-img rounded"></a>
                                 </div>
                                 <div class="posts-card__title flex d-flex flex-column">
-                                    <a href="boxed-blog-post.html" class="card-title mr-3">Design Systems Essentials</a>
+                                    <a href="blog-post.html" class="card-title mr-3">Design Systems Essentials</a>
                                     <small class="text-50">35 views last week</small>
                                 </div>
                                 <div class="d-flex align-items-center flex-column flex-sm-row posts-card__meta">
@@ -279,9 +250,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="page-section border-bottom-2">
-                <div class="container-fluid page__container">
+                <div class="container page__container">
                     <div class="page-separator">
                         <div class="page-separator__text">Learning Paths</div>
                     </div>
@@ -308,7 +278,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="boxed-student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                 </div>
                             </div>
@@ -335,8 +305,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="boxed-student-path.html" class="btn btn-primary mr-8pt">Resume</a>
-                                        <a href="boxed-student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
+                                        <a href="student-path.html" class="btn btn-primary mr-8pt">Resume</a>
+                                        <a href="student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -374,7 +344,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="boxed-student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                 </div>
                             </div>
@@ -401,8 +371,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="boxed-student-path.html" class="btn btn-primary mr-8pt">Resume</a>
-                                        <a href="boxed-student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
+                                        <a href="student-path.html" class="btn btn-primary mr-8pt">Resume</a>
+                                        <a href="student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -440,7 +410,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="boxed-student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                 </div>
                             </div>
@@ -467,8 +437,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="boxed-student-path.html" class="btn btn-primary mr-8pt">Resume</a>
-                                        <a href="boxed-student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
+                                        <a href="student-path.html" class="btn btn-primary mr-8pt">Resume</a>
+                                        <a href="student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -508,7 +478,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="boxed-student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                 </div>
                             </div>
@@ -535,8 +505,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="boxed-student-path.html" class="btn btn-primary mr-8pt">Resume</a>
-                                        <a href="boxed-student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
+                                        <a href="student-path.html" class="btn btn-primary mr-8pt">Resume</a>
+                                        <a href="student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -574,7 +544,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="boxed-student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                 </div>
                             </div>
@@ -601,8 +571,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="boxed-student-path.html" class="btn btn-primary mr-8pt">Resume</a>
-                                        <a href="boxed-student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
+                                        <a href="student-path.html" class="btn btn-primary mr-8pt">Resume</a>
+                                        <a href="student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -640,7 +610,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="boxed-student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                 </div>
                             </div>
@@ -667,8 +637,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="boxed-student-path.html" class="btn btn-primary mr-8pt">Resume</a>
-                                        <a href="boxed-student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
+                                        <a href="student-path.html" class="btn btn-primary mr-8pt">Resume</a>
+                                        <a href="student-path.html" class="btn btn-outline-secondary ml-0">Start over</a>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -688,14 +658,14 @@
                 </div>
             </div>
             <div class="page-section border-bottom-2">
-                <div class="container-fluid page__container">
+                <div class="container page__container">
                     <div class="page-separator">
                         <div class="page-separator__text">Design Courses</div>
                     </div>
                     <div class="row card-group-row">
                         <div class="col-md-6 col-lg-4 col-xl-3 card-group-row__col">
                             <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay card-group-row__card" data-toggle="popover" data-trigger="click">
-                                <a href="boxed-student-course.html" class="card-img-top js-image" data-position="" data-height="140">
+                                <a href="student-course.html" class="card-img-top js-image" data-position="" data-height="140">
                                     <img src="assets/images/paths/sketch_430x168.png" alt="course">
                                     <span class="overlay__content">
                                         <span class="overlay__action d-flex flex-column text-center">
@@ -707,10 +677,10 @@
                                 <div class="card-body flex">
                                     <div class="d-flex">
                                         <div class="flex">
-                                            <a class="card-title" href="boxed-student-course.html">Learn Sketch</a>
+                                            <a class="card-title" href="student-course.html">Learn Sketch</a>
                                             <small class="text-50 font-weight-bold mb-4pt">Elijah Murray</small>
                                         </div>
-                                        <a href="boxed-student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                     <div class="d-flex">
                                         <div class="rating flex">
@@ -749,9 +719,7 @@
                                         </p>
                                     </div>
                                 </div>
-
                                 <p class="my-16pt text-black-70">Learn the fundamentals of working with Angular and how to create basic applications.</p>
-
                                 <div class="mb-16pt">
                                     <div class="d-flex align-items-center">
                                         <span class="material-icons icon-16pt text-black-50 mr-8pt">check</span>
@@ -774,7 +742,6 @@
                                         <p class="flex text-black-50 lh-1 mb-0"><small>Testing with Angular</small></p>
                                     </div>
                                 </div>
-
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <div class="d-flex align-items-center mb-4pt">
@@ -791,15 +758,14 @@
                                         </div>
                                     </div>
                                     <div class="col text-right">
-                                        <a href="boxed-student-course.html" class="btn btn-primary">Watch trailer</a>
+                                        <a href="student-course.html" class="btn btn-primary">Watch trailer</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6 col-lg-4 col-xl-3 card-group-row__col">
                             <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay card-group-row__card" data-toggle="popover" data-trigger="click">
-                                <a href="boxed-student-course.html" class="card-img-top js-image" data-position="" data-height="140">
+                                <a href="student-course.html" class="card-img-top js-image" data-position="" data-height="140">
                                     <img src="assets/images/paths/flinto_430x168.png" alt="course">
                                     <span class="overlay__content">
                                         <span class="overlay__action d-flex flex-column text-center">
@@ -811,10 +777,10 @@
                                 <div class="card-body flex">
                                     <div class="d-flex">
                                         <div class="flex">
-                                            <a class="card-title" href="boxed-student-course.html">Learn Flinto</a>
+                                            <a class="card-title" href="student-course.html">Learn Flinto</a>
                                             <small class="text-50 font-weight-bold mb-4pt">Elijah Murray</small>
                                         </div>
-                                        <a href="boxed-student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                     <div class="d-flex">
                                         <div class="rating flex">
@@ -853,9 +819,7 @@
                                         </p>
                                     </div>
                                 </div>
-
                                 <p class="my-16pt text-black-70">Learn the fundamentals of working with Angular and how to create basic applications.</p>
-
                                 <div class="mb-16pt">
                                     <div class="d-flex align-items-center">
                                         <span class="material-icons icon-16pt text-black-50 mr-8pt">check</span>
@@ -878,7 +842,6 @@
                                         <p class="flex text-black-50 lh-1 mb-0"><small>Testing with Angular</small></p>
                                     </div>
                                 </div>
-
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <div class="d-flex align-items-center mb-4pt">
@@ -895,15 +858,14 @@
                                         </div>
                                     </div>
                                     <div class="col text-right">
-                                        <a href="boxed-student-course.html" class="btn btn-primary">Watch trailer</a>
+                                        <a href="student-course.html" class="btn btn-primary">Watch trailer</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6 col-lg-4 col-xl-3 card-group-row__col">
                             <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay card-group-row__card" data-toggle="popover" data-trigger="click">
-                                <a href="boxed-student-course.html" class="card-img-top js-image" data-position="" data-height="140">
+                                <a href="student-course.html" class="card-img-top js-image" data-position="" data-height="140">
                                     <img src="assets/images/paths/photoshop_430x168.png" alt="course">
                                     <span class="overlay__content">
                                         <span class="overlay__action d-flex flex-column text-center">
@@ -915,10 +877,10 @@
                                 <div class="card-body flex">
                                     <div class="d-flex">
                                         <div class="flex">
-                                            <a class="card-title" href="boxed-student-course.html">Learn Photoshop</a>
+                                            <a class="card-title" href="student-course.html">Learn Photoshop</a>
                                             <small class="text-50 font-weight-bold mb-4pt">Elijah Murray</small>
                                         </div>
-                                        <a href="boxed-student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                     <div class="d-flex">
                                         <div class="rating flex">
@@ -957,9 +919,7 @@
                                         </p>
                                     </div>
                                 </div>
-
                                 <p class="my-16pt text-black-70">Learn the fundamentals of working with Angular and how to create basic applications.</p>
-
                                 <div class="mb-16pt">
                                     <div class="d-flex align-items-center">
                                         <span class="material-icons icon-16pt text-black-50 mr-8pt">check</span>
@@ -982,7 +942,6 @@
                                         <p class="flex text-black-50 lh-1 mb-0"><small>Testing with Angular</small></p>
                                     </div>
                                 </div>
-
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <div class="d-flex align-items-center mb-4pt">
@@ -999,16 +958,14 @@
                                         </div>
                                     </div>
                                     <div class="col text-right">
-                                        <a href="boxed-student-course.html" class="btn btn-primary">Watch trailer</a>
+                                        <a href="student-course.html" class="btn btn-primary">Watch trailer</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6 col-lg-4 col-xl-3 card-group-row__col">
-
                             <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay card-group-row__card" data-toggle="popover" data-trigger="click">
-                                <a href="boxed-student-course.html" class="card-img-top js-image" data-position="" data-height="140">
+                                <a href="student-course.html" class="card-img-top js-image" data-position="" data-height="140">
                                     <img src="assets/images/paths/figma_430x168.png" alt="course">
                                     <span class="overlay__content">
                                         <span class="overlay__action d-flex flex-column text-center">
@@ -1017,14 +974,13 @@
                                         </span>
                                     </span>
                                 </a>
-
                                 <div class="card-body flex">
                                     <div class="d-flex">
                                         <div class="flex">
-                                            <a class="card-title" href="boxed-student-course.html">Learn Figma</a>
+                                            <a class="card-title" href="student-course.html">Learn Figma</a>
                                             <small class="text-50 font-weight-bold mb-4pt">Elijah Murray</small>
                                         </div>
-                                        <a href="boxed-student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                        <a href="student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
                                     </div>
                                     <div class="d-flex">
                                         <div class="rating flex">
@@ -1063,9 +1019,7 @@
                                         </p>
                                     </div>
                                 </div>
-
                                 <p class="my-16pt text-black-70">Learn the fundamentals of working with Angular and how to create basic applications.</p>
-
                                 <div class="mb-16pt">
                                     <div class="d-flex align-items-center">
                                         <span class="material-icons icon-16pt text-black-50 mr-8pt">check</span>
@@ -1088,7 +1042,6 @@
                                         <p class="flex text-black-50 lh-1 mb-0"><small>Testing with Angular</small></p>
                                     </div>
                                 </div>
-
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <div class="d-flex align-items-center mb-4pt">
@@ -1105,7 +1058,7 @@
                                         </div>
                                     </div>
                                     <div class="col text-right">
-                                        <a href="boxed-student-course.html" class="btn btn-primary">Watch trailer</a>
+                                        <a href="student-course.html" class="btn btn-primary">Watch trailer</a>
                                     </div>
                                 </div>
                             </div>
@@ -1113,14 +1066,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="page-section">
-                <div class="container-fluid page__container">
+                <div class="container page__container">
                     <div class="page-headline text-center">
                         <h2>Feedback</h2>
                         <p class="lead measure-lead mx-auto text-black-70">What other students turned professionals have to say about us after learning with us and reaching their goals.</p>
                     </div>
-
                     <div class="position-relative carousel-card col-lg-8 p-0 mx-auto">
                         <div class="row d-block js-mdk-carousel" id="carousel-feedback">
                             <a class="carousel-control-next js-mdk-carousel-control mt-n24pt" href="#carousel-feedback" role="button" data-slide="next">
@@ -1136,13 +1087,13 @@
                                     </div>
                                     <div class="media ml-12pt">
                                         <div class="media-left mr-12pt">
-                                            <a href="boxed-student-profile.html" class="avatar avatar-sm">
+                                            <a href="student-profile.html" class="avatar avatar-sm">
                                                 <!-- <img src="assets/images/people/110/guy-.jpg" width="40" alt="avatar" class="rounded-circle"> -->
                                                 <span class="avatar-title rounded-circle">UK</span>
                                             </a>
                                         </div>
                                         <div class="media-body media-middle">
-                                            <a href="boxed-student-profile.html" class="card-title">Umberto Kass</a>
+                                            <a href="student-profile.html" class="card-title">Umberto Kass</a>
                                             <div class="rating mt-4pt">
                                                 <span class="rating__item"><span class="material-icons">star</span></span>
                                                 <span class="rating__item"><span class="material-icons">star</span></span>
@@ -1153,7 +1104,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-12 col-md-6">
                                     <div class="card card-feedback card-body">
                                         <blockquote class="blockquote mb-0">
@@ -1162,13 +1112,13 @@
                                     </div>
                                     <div class="media ml-12pt">
                                         <div class="media-left mr-12pt">
-                                            <a href="boxed-student-profile.html" class="avatar avatar-sm">
+                                            <a href="student-profile.html" class="avatar avatar-sm">
                                                 <!-- <img src="assets/images/people/110/guy-.jpg" width="40" alt="avatar" class="rounded-circle"> -->
                                                 <span class="avatar-title rounded-circle">UK</span>
                                             </a>
                                         </div>
                                         <div class="media-body media-middle">
-                                            <a href="boxed-student-profile.html" class="card-title">Umberto Kass</a>
+                                            <a href="student-profile.html" class="card-title">Umberto Kass</a>
                                             <div class="rating mt-4pt">
                                                 <span class="rating__item"><span class="material-icons">star</span></span>
                                                 <span class="rating__item"><span class="material-icons">star</span></span>
@@ -1179,7 +1129,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-12 col-md-6">
                                     <div class="card card-feedback card-body">
                                         <blockquote class="blockquote mb-0">
@@ -1188,13 +1137,13 @@
                                     </div>
                                     <div class="media ml-12pt">
                                         <div class="media-left mr-12pt">
-                                            <a href="boxed-student-profile.html" class="avatar avatar-sm">
+                                            <a href="student-profile.html" class="avatar avatar-sm">
                                                 <!-- <img src="assets/images/people/110/guy-.jpg" width="40" alt="avatar" class="rounded-circle"> -->
                                                 <span class="avatar-title rounded-circle">UK</span>
                                             </a>
                                         </div>
                                         <div class="media-body media-middle">
-                                            <a href="boxed-student-profile.html" class="card-title">Umberto Kass</a>
+                                            <a href="student-profile.html" class="card-title">Umberto Kass</a>
                                             <div class="rating mt-4pt">
                                                 <span class="rating__item"><span class="material-icons">star</span></span>
                                                 <span class="rating__item"><span class="material-icons">star</span></span>
@@ -1210,24 +1159,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- // END Header Layout Content -->
 
-            <div class="js-fix-footer2 bg-white border-top-2">
-                <div class="container-fluid page__container page-section d-flex flex-column">
-                    <p class="text-70 brand mb-24pt">
-                        <img class="brand-icon" src="assets/images/logo/black-70@2x.png" width="30" alt="Luma"> Luma
-                    </p>
-                    <p class="measure-lead-max text-50 small mr-8pt">Luma is a beautifully crafted user interface for modern Education Platforms, including Courses & Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings and Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more.</p>
-                    <p class="mb-8pt d-flex">
-                        <a href="" class="text-70 text-underline mr-8pt small">Terms</a>
-                        <a href="" class="text-70 text-underline small">Privacy policy</a>
-                    </p>
-                    <p class="text-50 small mt-n1 mb-0">Copyright 2019 &copy; All rights reserved.</p>
-                </div>
+        <div class="js-fix-footer2 bg-white border-top-2">
+            <div class="container page__container page-section d-flex flex-column">
+                <p class="text-70 brand mb-24pt">
+                    <img class="brand-icon" src="assets/images/logo/black-70@2x.png" width="30" alt="Ecademy"> Ecademy
+                </p>
+                <p class="measure-lead-max text-50 small mr-8pt">Ecademy is a beautifully crafted user interface for modern Education Platforms, including Courses & Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings and Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more.</p>
+                <p class="mb-8pt d-flex">
+                    <a href="" class="text-70 text-underline mr-8pt small">Terms</a>
+                    <a href="" class="text-70 text-underline small">Privacy policy</a>
+                </p>
+                <p class="text-50 small mt-n1 mb-0">Copyright 2019 &copy; All rights reserved.</p>
             </div>
         </div>
-        <!-- // END drawer-layout__content -->
     </div>
-    <!-- // END drawer-layout -->
+    <!-- // END Header Layout -->
+
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
@@ -1249,6 +1199,23 @@
 
     <!-- App JS -->
     <script src="assets/js/app.js"></script>
+
+    <script>
+        (function() {
+            'use strict';
+            var headerNode = document.querySelector('.mdk-header')
+            var layoutNode = document.querySelector('.mdk-header-layout')
+            var componentNode = layoutNode ? layoutNode : headerNode
+
+            componentNode.addEventListener('domfactory-component-upgraded', function() {
+                headerNode.mdkHeader.eventTarget.addEventListener('scroll', function() {
+                    var progress = headerNode.mdkHeader.getScrollState().progress
+                    var navbarNode = headerNode.querySelector('#default-navbar')
+                    navbarNode.classList.toggle('bg-transparent', progress <= 0.2)
+                })
+            })
+        })()
+    </script>
 
 </body>
 

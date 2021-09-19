@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark-mode">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Browse Teachers</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap" rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Fix Footer CSS -->
+    <link type="text/css" href="assets/vendor/fix-footer.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/material-icons.css" rel="stylesheet">
+
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet">
+
+
+    <!-- Preloader -->
+    <link type="text/css" href="assets/css/preloader.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/dark.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-sticky-subnav layout-default ">
+
+    <div class="preloader">
+        <div class="sk-double-bounce">
+            <div class="sk-child sk-double-bounce1"></div>
+            <div class="sk-child sk-double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+        <!-- Header -->
+
+        <div id="header" class="mdk-header js-mdk-header mb-0" data-fixed data-effects="">
+            <div class="mdk-header__content">
+                <div class="navbar navbar-expand navbar-dark-dodger-blue navbar-shadow" id="default-navbar" data-primary>
+
+                    <!-- Navbar Brand -->
+                    <a href="fixed-index.html" class="navbar-brand mr-16pt">
+                        <!-- <img class="navbar-brand-icon" src="assets/images/logo/white-100@2x.png" width="30" alt="Luma"> -->
+                        <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+                            <span class="avatar-title rounded bg-primary"><img src="assets/images/illustration/student/128/white.svg" alt="logo" class="img-fluid" /></span>
+                        </span>
+                        <span class="d-none d-lg-block">Luma</span>
+                    </a>
+                    <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
+                        <li class="nav-item">
+                            <a href="courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="paths.html" class="nav-link">Paths</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown" data-toggle="tooltip" data-title="Community" data-placement="bottom" data-boundary="window">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                                <i class="material-icons">people_outline</i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="teachers.html" class="dropdown-item">Browse Teachers</a>
+                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                <a href="faq.html" class="dropdown-item">FAQ</a>
+                                <a href="help-center.html" class="dropdown-item">Help Center</a>
+                                <a href="discussions.html" class="dropdown-item">Discussions</a>
+                                <a href="discussions-ask.html" class="dropdown-item">Ask Question</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto mr-0">
+                        <li class="nav-item">
+                            <a href="fixed-login.html" class="nav-link" data-toggle="tooltip" data-title="Login" data-placement="bottom" data-boundary="window"><i class="material-icons">lock_open</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="fixed-signup.html" class="btn btn-outline-white">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- // END Header -->
+
+        <!-- Header Layout Content -->
+        <div class="mdk-header-layout__content page-content ">
+            <div data-push data-responsive-width="992px" class="mdk-drawer-layout js-mdk-drawer-layout">
+                <div class="mdk-drawer-layout__content">
+                    <div class="page-section">
+                        <div class="container page__container">
+                            <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-24pt" style="white-space: nowrap;">
+                                <small class="flex text-muted text-headings text-uppercase mr-3 mb-2 mb-sm-0">Displaying 4 out of 10 teachers</small>
+                                <div class="w-auto ml-sm-auto table d-flex align-items-center mb-2 mb-sm-0">
+                                    <small class="text-muted text-headings text-uppercase mr-3 d-none d-sm-block">Sort by</small>
+
+                                    <a href="#" class="sort desc small text-headings text-uppercase">Newest</a>
+
+                                    <a href="#" class="sort small text-headings text-uppercase ml-2">Popularity</a>
+
+                                </div>
+
+                                <a href="#" data-target="#library-drawer" data-toggle="sidebar" class="btn btn-sm btn-white ml-sm-16pt">
+                                    <i class="material-icons icon--left">tune</i> Filters
+                                </a>
+
+                            </div>
+                            <div class="page-separator">
+                                <div class="page-separator__text">Top Teachers</div>
+                            </div>
+
+                            <div class="row card-group-row">
+
+                                <div class="col-md-6 col-xl-4 card-group-row__col">
+                                    <div class="card card-group-row__card">
+                                        <div class="card-header d-flex align-items-center">
+                                            <a href="fixed-teacher-profile.html" class="card-title flex mr-12pt">Johnathan S.</a>
+                                            <a href="fixed-teacher-profile.html" class="btn btn-light btn-sm" data-toggle="tooltip" data-title="Unfollow" data-placement="bottom">Following</a>
+                                        </div>
+                                        <div class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
+                                            <a href="fixed-teacher-profile.html" class="avatar avatar-xl overlay js-overlay overlay--primary rounded-circle p-relative o-hidden mb-16pt">
+                                                <img src="assets/images/people/110/guy-1.jpg" alt="teacher" class="avatar-img">
+                                                <span class="overlay__content"><i class="overlay__action material-icons icon-40pt">face</i></span>
+                                            </a>
+                                            <div class="flex">
+                                                <div class="d-inline-flex align-items-center mb-8pt">
+                                                    <div class="rating mr-8pt">
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+
+                                                        <span class="rating__item"><span class="material-icons">star_border</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star_border</span></span>
+
+                                                    </div>
+                                                    <small class="text-muted">3/5</small>
+                                                </div>
+
+                                                <p class="text-70 measure-paragraph">Fueled by my passion for understanding the nuances of cross-cultural advertising, I consider myself a forever student, eager to both build on my academic foundations in psychology and sociology and stay in tune with the latest digital marketing strategies through continued coursework.</p>
+
+                                                <a href="javascript:void()" data-toggle="tooltip" data-title="Browse Topic" data-placement="bottom" class="chip chip-outline-secondary">UI Designer</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body flex-0">
+                                            <div class="d-flex align-items-center">
+                                                <a href="fixed-student-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                    <img src="assets/images/paths/angular_routing_200x168.png" alt="Angular Routing In-Depth" class="avatar-img rounded">
+                                                    <span class="overlay__content"></span>
+                                                </a>
+                                                <div class="flex">
+                                                    <a href="fixed-student-course.html" class="card-title">Angular Routing In-Depth</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-6 col-xl-4 card-group-row__col">
+                                    <div class="card card-group-row__card">
+                                        <div class="card-header d-flex align-items-center">
+                                            <a href="fixed-teacher-profile.html" class="card-title flex mr-12pt">Fabrice M.</a>
+                                            <a href="fixed-teacher-profile.html" class="btn btn-light btn-sm">Follow</a>
+                                        </div>
+                                        <div class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
+                                            <a href="fixed-teacher-profile.html" class="avatar avatar-xl overlay overlay--show overlay--primary rounded-circle p-relative o-hidden mb-16pt">
+                                                <img src="assets/images/people/110/guy-2.jpg" alt="teacher" class="avatar-img">
+                                                <span class="overlay__content"><i class="overlay__action material-icons icon-40pt">face</i></span>
+                                            </a>
+                                            <div class="flex">
+                                                <div class="d-inline-flex align-items-center mb-8pt">
+                                                    <div class="rating mr-8pt">
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+
+                                                    </div>
+                                                    <small class="text-muted">5/5</small>
+                                                </div>
+
+                                                <p class="text-70 measure-paragraph">Fueled by my passion for understanding the nuances of cross-cultural advertising, I consider myself a forever student, eager to both build on my academic foundations in psychology and sociology and stay in tune with the latest digital marketing strategies through continued coursework.</p>
+
+                                                <a href="javascript:void()" data-toggle="tooltip" data-title="Browse Topic" data-placement="bottom" class="chip chip-outline-secondary">Web Developer</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body flex-0">
+                                            <div class="d-flex align-items-center">
+                                                <a href="fixed-student-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                    <img src="assets/images/paths/swift_200x168.png" alt="Build an iOS Application in Swift" class="avatar-img rounded">
+                                                    <span class="overlay__content"></span>
+                                                </a>
+                                                <div class="flex">
+                                                    <a href="fixed-student-course.html" class="card-title">Build an iOS Application in Swift</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-6 col-xl-4 card-group-row__col">
+                                    <div class="card card-group-row__card">
+                                        <div class="card-header d-flex align-items-center">
+                                            <a href="fixed-teacher-profile.html" class="card-title flex mr-12pt">Diane D.</a>
+                                            <a href="fixed-teacher-profile.html" class="btn btn-light btn-sm">Follow</a>
+                                        </div>
+                                        <div class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
+                                            <a href="fixed-teacher-profile.html" class="avatar avatar-xl overlay js-overlay overlay--primary rounded-circle p-relative o-hidden mb-16pt">
+                                                <img src="assets/images/people/110/woman-1.jpg" alt="teacher" class="avatar-img">
+                                                <span class="overlay__content"><i class="overlay__action material-icons icon-40pt">face</i></span>
+                                            </a>
+                                            <div class="flex">
+                                                <div class="d-inline-flex align-items-center mb-8pt">
+                                                    <div class="rating mr-8pt">
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+
+                                                        <span class="rating__item"><span class="material-icons">star_border</span></span>
+
+                                                    </div>
+                                                    <small class="text-muted">4/5</small>
+                                                </div>
+
+                                                <p class="text-70 measure-paragraph">Fueled by my passion for understanding the nuances of cross-cultural advertising, I consider myself a forever student, eager to both build on my academic foundations in psychology and sociology and stay in tune with the latest digital marketing strategies through continued coursework.</p>
+
+                                                <a href="javascript:void()" data-toggle="tooltip" data-title="Browse Topic" data-placement="bottom" class="chip chip-outline-secondary">iOS Developer</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body flex-0">
+                                            <div class="d-flex align-items-center">
+                                                <a href="fixed-student-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                    <img src="assets/images/paths/wordpress_200x168.png" alt="Build a WordPress Website" class="avatar-img rounded">
+                                                    <span class="overlay__content"></span>
+                                                </a>
+                                                <div class="flex">
+                                                    <a href="fixed-student-course.html" class="card-title">Build a WordPress Website</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-32pt">
+
+                                <ul class="pagination justify-content-start pagination-xsm m-0">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                            <span>Prev</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Page 1">
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Page 2">
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span>Next</span>
+                                            <span aria-hidden="true" class="material-icons">chevron_right</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="page-separator">
+                                <div class="page-separator__text">Rising Stars</div>
+                            </div>
+
+                            <div class="row card-group-row">
+
+
+                                <div class="col-md-6 col-xl-4 card-group-row__col">
+                                    <div class="card card-group-row__card">
+                                        <div class="card-header d-flex align-items-center">
+                                            <a href="fixed-teacher-profile.html" class="card-title flex mr-12pt">Nicole G.</a>
+                                            <a href="fixed-teacher-profile.html" class="btn btn-light btn-sm">Follow</a>
+                                        </div>
+                                        <div class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
+                                            <a href="fixed-teacher-profile.html" class="avatar avatar-xl overlay overlay--show overlay--primary rounded-circle p-relative o-hidden mb-16pt">
+                                                <img src="assets/images/people/110/woman-2.jpg" alt="teacher" class="avatar-img">
+                                                <span class="overlay__content"><i class="overlay__action material-icons icon-40pt">face</i></span>
+                                            </a>
+                                            <div class="flex">
+                                                <div class="d-inline-flex align-items-center mb-8pt">
+                                                    <div class="rating mr-8pt">
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+
+                                                    </div>
+                                                    <small class="text-muted">5/5</small>
+                                                </div>
+
+                                                <p class="text-70 measure-paragraph">Fueled by my passion for understanding the nuances of cross-cultural advertising, I consider myself a forever student, eager to both build on my academic foundations in psychology and sociology and stay in tune with the latest digital marketing strategies through continued coursework.</p>
+
+                                                <a href="javascript:void()" data-toggle="tooltip" data-title="Browse Topic" data-placement="bottom" class="chip chip-outline-secondary">UX Designer</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body flex-0">
+                                            <div class="d-flex align-items-center">
+                                                <a href="fixed-student-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                    <img src="assets/images/paths/angular_routing_200x168.png" alt="" class="avatar-img rounded">
+                                                    <span class="overlay__content"></span>
+                                                </a>
+                                                <div class="flex">
+                                                    <a href="fixed-student-course.html" class="card-title">Angular Routing In-Depth</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-6 col-xl-4 card-group-row__col">
+                                    <div class="card card-group-row__card">
+                                        <div class="card-header d-flex align-items-center">
+                                            <a href="fixed-teacher-profile.html" class="card-title flex mr-12pt">Abraham K.</a>
+                                            <a href="fixed-teacher-profile.html" class="btn btn-light btn-sm">Follow</a>
+                                        </div>
+                                        <div class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
+                                            <a href="fixed-teacher-profile.html" class="avatar avatar-xl overlay js-overlay overlay--primary rounded-circle p-relative o-hidden mb-16pt">
+                                                <img src="assets/images/people/110/guy-3.jpg" alt="teacher" class="avatar-img">
+                                                <span class="overlay__content"><i class="overlay__action material-icons icon-40pt">face</i></span>
+                                            </a>
+                                            <div class="flex">
+                                                <div class="d-inline-flex align-items-center mb-8pt">
+                                                    <div class="rating mr-8pt">
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+
+                                                        <span class="rating__item"><span class="material-icons">star_border</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star_border</span></span>
+
+                                                    </div>
+                                                    <small class="text-muted">3/5</small>
+                                                </div>
+
+                                                <p class="text-70 measure-paragraph">Fueled by my passion for understanding the nuances of cross-cultural advertising, I consider myself a forever student, eager to both build on my academic foundations in psychology and sociology and stay in tune with the latest digital marketing strategies through continued coursework.</p>
+
+                                                <a href="javascript:void()" data-toggle="tooltip" data-title="Browse Topic" data-placement="bottom" class="chip chip-outline-secondary">Entrepreneur</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body flex-0">
+                                            <div class="d-flex align-items-center">
+                                                <a href="fixed-student-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                    <img src="assets/images/paths/react_200x168.png" alt="Become a React Native Developer" class="avatar-img rounded">
+                                                    <span class="overlay__content"></span>
+                                                </a>
+                                                <div class="flex">
+                                                    <a href="fixed-student-course.html" class="card-title">Become a React Native Developer</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-6 col-xl-4 card-group-row__col">
+                                    <div class="card card-group-row__card">
+                                        <div class="card-header d-flex align-items-center">
+                                            <a href="fixed-teacher-profile.html" class="card-title flex mr-12pt">Jane D.</a>
+                                            <a href="fixed-teacher-profile.html" class="btn btn-light btn-sm">Follow</a>
+                                        </div>
+                                        <div class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
+                                            <a href="fixed-teacher-profile.html" class="avatar avatar-xl overlay js-overlay overlay--primary rounded-circle p-relative o-hidden mb-16pt">
+                                                <img src="assets/images/people/110/woman-3.jpg" alt="teacher" class="avatar-img">
+                                                <span class="overlay__content"><i class="overlay__action material-icons icon-40pt">face</i></span>
+                                            </a>
+                                            <div class="flex">
+                                                <div class="d-inline-flex align-items-center mb-8pt">
+                                                    <div class="rating mr-8pt">
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+                                                        <span class="rating__item"><span class="material-icons">star</span></span>
+
+
+                                                    </div>
+                                                    <small class="text-muted">5/5</small>
+                                                </div>
+
+                                                <p class="text-70 measure-paragraph">Fueled by my passion for understanding the nuances of cross-cultural advertising, I consider myself a forever student, eager to both build on my academic foundations in psychology and sociology and stay in tune with the latest digital marketing strategies through continued coursework.</p>
+
+                                                <a href="javascript:void()" data-toggle="tooltip" data-title="Browse Topic" data-placement="bottom" class="chip chip-outline-secondary">Android Developer</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body flex-0">
+                                            <div class="d-flex align-items-center">
+                                                <a href="fixed-student-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                    <img src="assets/images/paths/angular_routing_200x168.png" alt="" class="avatar-img rounded">
+                                                    <span class="overlay__content"></span>
+                                                </a>
+                                                <div class="flex">
+                                                    <a href="fixed-student-course.html" class="card-title">Angular Routing In-Depth</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <ul class="pagination justify-content-start pagination-xsm m-0">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                        <span>Prev</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Page 1">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Page 2">
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span>Next</span>
+                                        <span aria-hidden="true" class="material-icons">chevron_right</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="mdk-drawer js-mdk-drawer " id="library-drawer" data-align="end">
+                    <div class="mdk-drawer__content top-navbar">
+                        <div class="sidebar sidebar-light sidebar-right py-16pt" data-perfect-scrollbar data-perfect-scrollbar-wheel-propagation="true">
+
+                            <div class="d-flex align-items-center mb-24pt  d-lg-none">
+                                <form action="index.html" class="search-form search-form--light mx-16pt pr-0 pl-16pt">
+                                    <input type="text" class="form-control pl-0" placeholder="Search">
+                                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                                </form>
+                            </div>
+
+                            <div class="sidebar-heading">Category</div>
+                            <ul class="sidebar-menu">
+                                <li class="sidebar-menu-item active">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
+                                        <span class="sidebar-menu-text">Web Development</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">brush</span>
+                                        <span class="sidebar-menu-text">Design</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">settings_cell</span>
+                                        <span class="sidebar-menu-text">iOS &amp; Swift</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                                        <span class="sidebar-menu-text">Android</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">business_center</span>
+                                        <span class="sidebar-menu-text">Business</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">crop_original</span>
+                                        <span class="sidebar-menu-text">Photography</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">payment</span>
+                                        <span class="sidebar-menu-text">Marketing</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">store</span>
+                                        <span class="sidebar-menu-text">eCommerce</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">redeem</span>
+                                        <span class="sidebar-menu-text">Health &amp; Fitness</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="" class="sidebar-menu-button">
+                                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">music_note</span>
+                                        <span class="sidebar-menu-text">Music</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="sidebar-heading">Platform</div>
+                            <div class="sidebar-block">
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck01" checked="">
+                                        <label class="custom-control-label" for="filtersCheck01">All</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck02">
+                                        <label class="custom-control-label" for="filtersCheck02">Archive</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck06">
+                                        <label class="custom-control-label" for="filtersCheck06">Unity</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck03">
+                                        <label class="custom-control-label" for="filtersCheck03">Web</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck04">
+                                        <label class="custom-control-label" for="filtersCheck04">iOS &amp; Swift</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck05">
+                                        <label class="custom-control-label" for="filtersCheck05">Android</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-heading">Subscription</div>
+                            <div class="sidebar-block">
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck07" checked="">
+                                        <label class="custom-control-label" for="filtersCheck07">All</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck08">
+                                        <label class="custom-control-label" for="filtersCheck08">Free</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck09">
+                                        <label class="custom-control-label" for="filtersCheck09">Beginner</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck10">
+                                        <label class="custom-control-label" for="filtersCheck10">Advanced</label>
+                                    </div>
+                                </div>
+qs                            </div>
+
+                            <div class="sidebar-heading">Content type</div>
+                            <div class="sidebar-block">
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck11" checked="">
+                                        <label class="custom-control-label" for="filtersCheck11">All</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck12">
+                                        <label class="custom-control-label" for="filtersCheck12">Episode</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck13">
+                                        <label class="custom-control-label" for="filtersCheck13">Video</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck14">
+                                        <label class="custom-control-label" for="filtersCheck14">Article</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck15">
+                                        <label class="custom-control-label" for="filtersCheck15">Book</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" value="" id="filtersCheck16">
+                                        <label class="custom-control-label" for="filtersCheck16">Screencast</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- // END Header Layout Content -->
+
+    </div>
+    <!-- // END Header Layout -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- Fix Footer -->
+    <script src="assets/vendor/fix-footer.js"></script>
+
+    <!-- App JS -->
+    <script src="assets/js/app.js"></script>
+
+
+
+
+</body>
+
+</html>
